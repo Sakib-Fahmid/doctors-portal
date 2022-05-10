@@ -3,7 +3,7 @@ import React from 'react';
 const InfoCard = ({ data }) => {
     const { bgColor, cardText, cardTitle, img } = data;
     return (
-        <div className={`card h-40 shadow-xl bg-${bgColor}`}>
+        <div className={`card h-40 shadow-xl ${bgColor}`}>
             <div className="card-body">
                 <div className='flex items-center'>
                     <div className='px-2 w-1/2'>
