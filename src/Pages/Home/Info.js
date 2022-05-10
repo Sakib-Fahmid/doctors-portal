@@ -5,17 +5,17 @@ import phone from '../../assets/icons/phone.svg';
 import InfoCard from './InfoCard';
 
 const Info = () => {
-    const carInfoData = [
+    const cardInfoData = [
         {
             id: 1,
             cardTitle: "Opening Hours",
             cardText: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
             img: clock,
-            bgColor: 'bg-primary'
+            bgColor: 'bg-gradient-to-r from-primary to-secondary'
         },
         {
             id: 2,
-            cardTitle: "Locate Use At",
+            cardTitle: "Locate Us At",
             cardText: "Dhaka-1230, Bangladesh.",
             img: marker,
             bgColor: 'bg-accent'
@@ -25,13 +25,13 @@ const Info = () => {
             cardTitle: "Contact Us Now",
             cardText: "019-12-9482-12",
             img: phone,
-            bgColor: 'bg-primary'
+            bgColor: 'bg-gradient-to-r from-primary to-secondary'
         }
     ];
     return (
-        <div className='grid grid-cols-1 md:grid-cols-3 gap-4 px-12'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
             {
-                carInfoData.map(data => <InfoCard key={data.id} data={data}></InfoCard>)
+                cardInfoData.map(data => <InfoCard key={data.id} data={data}></InfoCard>)
             }
         </div>
     );
